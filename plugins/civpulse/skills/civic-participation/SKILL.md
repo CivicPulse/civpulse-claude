@@ -39,9 +39,9 @@ Pulse records to locate officials and meetings when available.
 
 ## With the Civic Pulse MCP server
 
-Use `search_people`/`get_person` to resolve an official and
-`search_events`/`get_event` to find the meeting where an item will be heard when
-`mcp__civpulse__*` tools are available. The MCP `search_users` tool is for
+Use `search_site` (directory mode, type `person`)/`get_civic_record` (type `person`) to resolve an official and
+`search_site` (directory mode, type `event`)/`get_civic_record` (type `event`) to find the meeting where an item will be heard when
+`mcp__plugin_civpulse_civpulse__*` tools are available. The MCP `search_users` tool is for
 registered *accounts* and is unrelated to civic participation; do not use it to
 look up members of the public.
 

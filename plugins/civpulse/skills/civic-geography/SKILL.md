@@ -43,11 +43,11 @@ server when available.
 
 ## With the Civic Pulse MCP server
 
-Use `search_maps`, `get_map`, `get_map_layers`, `search_layers`, and
-`get_layer_geojson` to read; `create_layer`/`save_postgis_layer` for data;
+Use `search_site` (directory mode, type `map`), `get_civic_record` (type `map`), `read_related_records` (relation `map_layers`), `search_site` (directory mode, type `layer`), and
+`get_layer_geojson` to read; `save_layer`/`save_postgis_layer` for data;
 `create_map_layer`/`update_map_layer` for links; and `create_layer_feature`,
 `update_layer_feature`, and `delete_layer_feature` for single features when
-`mcp__civpulse__*` tools are available. Omitting `geojson` on an update preserves
+`mcp__plugin_civpulse_civpulse__*` tools are available. Omitting `geojson` on an update preserves
 the dataset, while supplying it replaces the entire dataset — confirm before
 replacing.
 

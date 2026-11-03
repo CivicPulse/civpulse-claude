@@ -54,11 +54,13 @@ when it is connected.
 
 ## With the Civic Pulse MCP server
 
-When `mcp__civpulse__*` tools are available, use `search_site`, `search_events`,
-`search_people`, `search_elections`, and the matching `get_*` tools to pull
+When `mcp__plugin_civpulse_civpulse__*` tools are available, use `search_site`, `search_site` (directory mode, type `event`),
+`search_site` (directory mode, type `person`), `search_site` (directory mode, type `election`), and `get_civic_record` to pull
 canonical records and IDs, then join your data on those UUIDs. The server returns
 records, not aggregate statistics; do the math yourself and keep the source IDs
 alongside the result.
+
+Structured turnout is a dataset you can aggregate, but election lookups (`get_civic_record` with type `election`, and `search_site`) do not return it. Read it with `manage_election_results` and `action = "read_turnout"`, following the `civic-results` skill. Page through every row, keep `table`, `counting_group` and `county_fips` on each row, and do not add overlapping absentee views. Use `report.id` as the dataset version, and report `captured_at` and the `as_of` label separately. Statewide totals are not stored and `read_turnout` has no summary action, so computing them means reading every page. Report them as unavailable unless the user asks for the full computation, and never fill the gap from an outside source without approval. Tracked in kerryhatcher/www.civpulse.org#197.
 
 ## Guardrails
 

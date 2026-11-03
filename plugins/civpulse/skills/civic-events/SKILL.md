@@ -43,8 +43,8 @@ time zone, location or virtual link, agenda and minutes URLs, status
 
 ## With the Civic Pulse MCP server
 
-Use `search_events` (set `include_past` for history), `search_calendars`,
-`list_calendars`, `get_event`, and `get_calendar` when `mcp__civpulse__*` tools
+Use `search_site` (directory mode, type `event`) (set `include_past` for history), `search_site` (directory mode, type `calendar`),
+`read_related_records` (relation `calendars`), `get_civic_record` (type `event`), and `get_civic_record` (type `calendar`) when `mcp__plugin_civpulse_civpulse__*` tools
 are available. With no server, read the official calendar page or ICS feed and
 parse it with your HTTP tooling, then apply the same steps.
 
