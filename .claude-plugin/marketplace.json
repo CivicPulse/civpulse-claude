@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "civpulse-claude",
+  "owner": {
+    "name": "CivicPulse",
+    "url": "https://github.com/CivicPulse"
+  },
+  "metadata": {
+    "description": "Claude Code marketplace for Civic Pulse: MCP access to civic records plus civic research, writing, data and participation skills.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "civpulse",
+      "source": "./plugins/civpulse",
+      "description": "Search and manage Civic Pulse through authenticated MCP tools and civic research, editing, mapping and participation skills.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kerry Hatcher"
+      },
+      "homepage": "https://www.civpulse.org",
+      "repository": "https://github.com/CivicPulse/civpulse-claude",
+      "license": "MIT",
+      "keywords": ["civic", "elections", "maps", "community", "mcp", "skills"],
+      "category": "productivity"
+    }
+  ]
+}

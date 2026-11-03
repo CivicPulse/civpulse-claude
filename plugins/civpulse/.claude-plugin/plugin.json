@@ -1,0 +1,12 @@
+{
+  "name": "civpulse",
+  "version": "1.0.0",
+  "description": "Search and manage Civic Pulse through authenticated MCP tools, plus civic research, editing, mapping, writing, data, events, geography, fact-checking and participation skills.",
+  "author": {
+    "name": "Kerry Hatcher"
+  },
+  "homepage": "https://www.civpulse.org",
+  "repository": "https://github.com/CivicPulse/civpulse-claude",
+  "license": "MIT",
+  "keywords": ["civic", "elections", "maps", "community", "mcp", "skills"]
+}
